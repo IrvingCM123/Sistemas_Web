@@ -1,0 +1,75 @@
+<title>Ejemplo|Landing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img class="logo" src="../../assets/Icono.png" alt="" style="height: 90%; width: 10%; margin: 0;">
+
+      <input type="checkbox" id="menu-toggler">
+
+      <label for="menu-toggler" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </label>
+
+      <ul class="all-links">
+        <li> <a (click)="scrollToElement('#home')" style="cursor: pointer;">Inicio</a></li>
+        <li><a (click)="scrollToElement('#servicios')" style="cursor: pointer;">Servicios</a></li>
+        <li><a (click)="scrollToElement('#portafolio')" style="cursor: pointer;">Portafolio</a></li>
+        <li><a (click)="scrollToElement('#nosotros')" style="cursor: pointer;">Nosotros</a></li>
+        <li><a (click)="scrollToElement('#contacto')" style="cursor: pointer;">Contacto</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <section class="inicio" id="home">
+    <div class="content">
+      <div class="text" id="nosotros">
+        <h1> </h1>
+        <p> Desarrollador Web: Irving Rafael Conde Marín
+          <br>
+        </p>
+      </div>
+      <a href="https://practicas-veterinaria.vercel.app/" id="servicios" target="_blank">Servicios</a>
+    </div>
+  </section>
+
+  <section class="portafolio" id="portafolio">
+    <h2>Portafolio</h2>
+    <p> Esta es una sección acerca de los trabajos que he realizado:  </p>
+    <ul class="cards">
+      <li class="card">
+        <img alt="img" src="../../assets/Practica2/OIP.jpeg">
+        <h3>Veterinaria: </h3>
+        <p>       <a href="https://practicas-veterinaria.vercel.app/" id="servicios" style="text-decoration: none;" target="_blank">Servicios</a>
+        </p>
+      </li>
+      <li class="card">
+        <img alt="img" src="../../assets/Practica2/OIP.jpeg">
+        <h3>Escaner</h3>
+        <p>   <a href="https://simulador-escaner-1x306mis6-irvingconde.vercel.app/Inicio" id="servicios" style="text-decoration: none;" target="_blank">Servicios</a>
+
+      </li>
+      <li class="card">
+        <img alt="" src="../../assets/Practica2/OIP.jpeg">
+        <h3>Anime</h3>
+        <p>  <a href="https://animes-graphql-react.vercel.app/" id="servicios" style="text-decoration: none;" target="_blank">Servicios</a>
+        </li>
+    </ul>
+  </section>
+
+  <footer>
+    <div id="contacto">
+      <span>Copyright © 2023 All Rights Reserved</span>
+      <span class="link">
+        <a href="https://www.facebook.com/irving.conde.315" target="_blank">Facebook</a>
+        <a href="#">Instagram</a>
+      </span>
+    </div>
+  </footer>
+
+</body>
